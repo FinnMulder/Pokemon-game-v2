@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script/script.js" defer></script>
+    <title>Pokemon Fight</title>
+  </head>
+  <body class="background">
+    <header>
+      <section>
+        <div class="overlay"></div>
+        <div id="soundIcon" class="sound-icon">
+          <img id="soundImg" src="img/sound-off.png" alt="Geluid uit" />
+        </div>
+      </section>
+      <a
+        href="arena.html"
+        class="top-right-link"
+        id="naarArenaLink"
+        style="display: none"
+        >Naar Arena</a
+      >
+    </header>
+
+    <main>
+      <div class="kaarten-container">
+        <div class="pokemon-kaart">
+          <img src="./pokemon-kaartjes/pickachu.png" alt="Pikachu" />
+          <button class="info-btn pikachu-btn" id="infoPikachu">i</button>
+          <button
+            class="kies-btn pikachu-btn"
+            data-sound="pokemons/Pickachu/pikachu_scream.mp3"
+            data-name="Pikachu"
+            data-attack="50"
+            data-special="90"
+            data-img="pikachu-cute.webp"
+          >
+            Kies
+          </button>
+        </div>
+
+        <div class="pokemon-kaart">
+          <img src="./pokemon-kaartjes/charmender.png" alt="Charmender" />
+          <button class="info-btn charmander-btn" id="infoCharmender">i</button>
+          <button
+            class="kies-btn charmander-btn"
+            data-sound="pokemons/Charmander/charmander.mp3"
+            data-name="Charmender"
+            data-attack="30"
+            data-special="65"
+            data-img="charmender-moving.webp"
+          >
+            Kies
+          </button>
+        </div>
+
+        <div class="pokemon-kaart">
+          <img src="./pokemon-kaartjes/squirtle.png" alt="Squirtle" />
+          <button class="info-btn squirtle-btn">i</button>
+          <button
+            class="kies-btn squirtle-btn"
+            data-sound="pokemons/squirtle/y2mate_0zCjkXt.mp3"
+            data-name="Squirtle"
+            data-attack="25"
+            data-special="50"
+            data-img="squirtle-moving.webp"
+          >
+            Kies
+          </button>
+        </div>
+
+        <div class="pokemon-kaart">
+          <img src="./pokemon-kaartjes/bulbasaur.png" alt="Bulbasaur" />
+          <button class="info-btn bulbasaur-btn">i</button>
+          <button
+            class="kies-btn bulbasaur-btn"
+            data-sound="pokemons/bulbasaur/bulbasaur-1.mp3"
+            data-name="Bulbasaur"
+            data-attack="37"
+            data-special="57"
+            data-img="bulbasar-moving.webp"
+          >
+            Kies
+          </button>
+        </div>
+
+        <div class="pokemon-kaart">
+          <img src="./pokemon-kaartjes/machop.png" alt="Machop" />
+          <button class="info-btn machop-btn">i</button>
+          <button
+            class="kies-btn machop-btn"
+            data-sound="pokemons/machop/machop-101soundboards.mp3"
+            data-name="Machop"
+            data-attack="40"
+            data-special="67"
+            data-img="machoke-pokemon.webp"
+          >
+            Kies
+          </button>
+        </div>
+
+        <div class="pokemon-kaart">
+          <img src="./pokemon-kaartjes/poliwag.png" alt="Poliwag" />
+          <button class="info-btn poliwag-btn">i</button>
+          <button
+            class="kies-btn poliwag-btn"
+            data-sound="pokemons/poliwag/1-101soundboards.mp3"
+            data-name="Poliwag"
+            data-attack="20"
+            data-special="50"
+            data-img="poliwag-moving.webp"
+          >
+            Kies
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <audio id="selectSound" src="./Pokemons/Pickachu/pikachu0.mp3"></audio>
+
+    <audio id="homeSound" loop>
+      <!-- thijn heeft sound livegezet ivm te grootte file -->
+      <source
+        src="https://reunieponyclubzuidoostbeemster.nl/pokemon-audio.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </body>
+</html>
