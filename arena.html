@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script/arena.js" defer></script>
+    <title>Pokemon Fight</title>
+  </head>
+  <body class="background-2">
+    <header>
+      <section>
+        <div class="overlay">
+          <a href="index.html" class="top-left-link">Terug</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="arena-layout">
+      <div class="pokemon-side" id="pokemon1"></div>
+      <div class="pokemon-cards"></div>
+
+      <div id="battleSection" class="battle-center">
+        <div id="coinFlipZone">
+          <p id="coinResultText">Wie mag beginnen?</p>
+          <img id="coinImg" src="img/eevee-coin.png" width="100" alt="Coin" />
+          <button class="coinbtn" id="flipCoinBtn">Gooi munt</button>
+        </div>
+
+        <div id="winMessage" style="display: none;">
+          <p id="winnerText"></p>
+          <button onclick="window.location.href='index.html'">Terug naar Dashboard</button>
+        </div>
+
+        <div id="gifContainer">
+          <p id="turnMessage"></p>
+
+          <div class="battle-button" id="battleButton">
+          <button id="startGevechtBtn">Start Gevecht</button>
+        </div>
+      </div>
+
+      <div class="pokemon-side" id="pokemon2"></div>
+    </main>
+
+    <audio id="battleSound" loop>
+      <source src="./pokemons/sounds/battle-sound.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="winSound">
+      <source src="./pokemons/sounds/pokemon-red-blue-music-wild-pokemon-victory-theme-1.mp3" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
